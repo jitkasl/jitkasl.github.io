@@ -1,0 +1,24 @@
+name: "Jitka Slabá"
+output_dir: "."
+navbar:
+  title: "Jitka Slabá"
+  left:
+    - text: "Životopis"
+      href: CV.html
+    - text: "Aktivity"
+      href: Aktivity.html
+    - text: "Publikace"
+      href: Publikace.html
+    - text: "eRko"
+      href: erko.html
+    - text: Obdiv
+      href: obdiv.html
+
+  right:
+    - icon: fa-twitter fa-lg
+      href: https://twitter.com/sljitka
+
+output:
+  html_document:
+    theme: paper
+    css: 'styles.css'
