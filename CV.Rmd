@@ -1,0 +1,132 @@
+---
+title: <center>CV - Jitka Slabá</center>  
+---
+
+# Kontakt 
+
+* E-mail: slabajitkas(at)gmail.com  
+* Afiliace: KDGD, PřF UK
+  
+  
+# Profesní dovednosti
+* **Realizace kvantitativního a kvalitativního výzkumu** - v rámci pracovních zkušeností i studia jsem měla možnost účastnit se celého procesu. A to jak z optiky zadavatele realizace sběru dat, tak i z pozice agentury která má sběr dat na starost. Mám zkušenost se všemi fázemi výzkumu, od jeho přípravy, přes sběr dat a analýzu dat, až po prezentaci a publikaci výsledků.
+* **Vizualizace a prezentace** - díky doktorskému studiu které zahrnuje i prezentaci práce na konferencích prostřednitcvím posterů a ústních příspěvků mám zkušenost s krátkou a efektivní prezentací hlavních myšlenek, struktury a výsledků projektu. Prezentační dovednosti jsem také významně vylepšila absolováním kurzů rétoriky a aplikované improvizace. V posledním roce se intenzivněji věnuji zlepšení vizuální stránky prezentací. 
+* **Organizace společenských událostí** - V rámci studia i práce jsem se podílela na organizaci konferencí či společenských událostí pro zaměstnance a klienty.
+* **Příprava a realizace výuky dospělých** - v rámci doktroského studia jsem dostala příležitost jak k praxi, tak i k rozšíření znalostí v této oblasti. 
+  
+  
+# Vzdělání  
+
+* *10/2016–současnost* 
+  + **Doktorský studijní program Demografie**
+  + KDGD, Přírodovědecká fakulta, Univerzita Karlova
+  + Téma disertační práce: Odkald plodnosti českých žen na přelomu tisíciletí
+  + Školitelka: doc. RNDr. Jiřina Kocourková, Ph.D.
+  + Program STARS (Supporting Talented PhD Research Students) - projekt: Transition of reporoductive patterns in low fertility setting, differentials by the level of education   
+  
+  
+* *10/2019–12/2019*
+  + **Stáž v Max Planck institutu pro demografický výzkum**
+  + Rostock, Německo
+  + Laboratoř Fertility and Well-being
+  + Zároveň absolvován i kurz "Fundamental of Digital Demography"  
+  
+  
+* *7/2019–7/2019*
+  + **Barcelona Summer School of Demography**
+  + Centre for Demographic Studies (CED), Barcelona, Španělsko
+  + Absolvovány čtyři moduly: "Introduction to R"; "Data visualization with R"; "Demography with R"; "Spatial Analysis with R"  
+  
+  
+* *2/2018–4/2015*
+  + **Erasmus +**
+  + Faculty of Spatial Sciences, University of Groningen, Netherlands  
+  
+  
+* *10/2014–5/2016*
+  + **Magisterský studijní program Demografie**
+  + KDGD, Přírodovědecká fakulta, Univerzita Karlova
+  + Téma diplomové práce: Využití času v závislosti na přítomnosti dítěte v domácnosti v generacích 40. až 70. let 20. století ve Spojených státech amerických 
+  + Školitelka: RNDr. Olga Kurtinová, Ph.D.  
+  
+  
+* **Absolvované kurzy v průběhu doktorského studia**
+  + Kurz projektového řízení (PřF, UK)
+  + Vysokoškolská pedagogika (PřF, UK)
+  + Aplikovaná improvizace (PřF, UK)
+  + Praktická rétorika a prezentace (PřF, UK)
+  + Rétorika a prezentace pro pokročilé (PřF, UK)
+  + Introduction to R (BSSD, Barcelona)
+  + Data visualization with R (BSSD, Barcelona)
+  + Demography with R (BSSD, Barcelona)
+  + Spatial Analysis with R (BSSD, Barcelona)
+  + Fundamental of Digital Demography (MPIDR, Rostock)
+  + Demographic Measures (MPIDR, Rostock)  
+
+# Jazykové znalosti
+* **češina** - rozený okrajový Pražák
+* **angličitna** - C1 dle certifikátu ze začátku roku 2019 (od té doby se to snad ještě trochu zlepšilo)
+* **němčina** - B1 (intenzivně pracuji na dalším zlepšení)
+  
+# Pracovní zkušenosti
+
+* *10/2016–současnost*
+  + **Katedra demografie a geodemografie**, PřF UK, Albertov 6, Praha
+  + Vedle doktorské studia se částečně účastním i vybraných výzkumných projektů, jež jsou na katedře realizovány. Současně se podílím i na výuce a propagaci studia.
+    - GAČR, 2015-2017 (č. 15-09443S), Rizika odkladu rodičovství: Nová role rodinné politiky?
+    - GAČR, 2018-2020 (č. 18-08013S), Posun rodičovství do vyššího věku: individuální perspektivy versus společenské náklady
+  + **Analýza dat z kvantitativního šetření; příprava podkladů pro odborné publikace; příprava, realizace a analýza dat z kvalitativního šetření; výuka; propagace**
+  
+* *8/2015–9/2016*
+  + **ppm factum research s.r.o**, Bucharova 2, Praha 13
+  + **Zpracování dat; analýza dat**
+
+* *1/2013–7/2015*
+  + **Euro Managers s.r.o.**, V Holešovičkách 28, Praha 8
+  + **Administrativní práce v oblasti dotačního poradenství**
+
+
+# Softwarové schopnosti
+  + **R** - již se pomalu přestávám zvát začátečníkem, nicméně stále je zde vellký prostor pro zlešení
+  + **SPSS statistics** - pracovní i studijní zkušenosti, pokročilá uživatelská znalost
+  + **SAS** - již poněkud zaprášená znalsot, ale v případě potřeby lze snadno obnovit; v tomto softwaru jsem zpracovávala objemná data diplomové práce
+  + **ArcGIS** - základní znalost
+  
+
+# Publikace 
+
+* Slabá, J. 2020. **Nezaměstnanost ženy jako příčina deklarovaného odkladu založení rodiny?**. Sociológia, 52(2), s. 132–152. ISSN 0049-1225. IF 0.471. [článek](https://doi.org/10.31577/sociologia.2020.52.2.6.)
+* Altová A., Maláková, K., Slabá, J. 2019. **Nejvýznamnější proměny v reprodukčním chování světové populace**. Geografické rozhledy, 29(1), 26–29. [článek](https://www.geograficke-rozhledy.cz/archiv/clanek/2900)
+* Šťastná A., Slabá, J., Kocourková J. 2019. **Druhé dítě – neplánovaný odklad a časování jeho narození**. Demografie, 61, p. 77–92. [článek](https://www.czso.cz/documents/10180/91917740/13005319q2_77.pdf/b0972342-7094-4feb-bf85-f0acb04e1f30?version=1.0)
+* Šťastná A., Slabá, J. Kocourková J. 2017. **Plánování, načasování a důvody odkladu narození prvního dítěte v České republice**. Demografie. 59, 207–223. [článek](https://www.czso.cz/documents/10180/46203816/stastna.pdf/0cf15559-1e0a-4b47-a7d6-e8faeb236404?version=1.0)
+* Hulíková, K., Slabá, J., 2016. **Hispánci jako nedílná součást Spojených států amerických**. Geografické rozhledy, 25(4), s. 20–21. [článek](https://www.geograficke-rozhledy.cz/archiv/clanek/115/pdf)
+* Kociánová, G., Moszová, V., Růžičková, M., Slabá, J., Vrabcová, M. and O. Kurtinová, 2015. **Přehled publikovaných příspěvků v časopise Demografie, revue pro výzkum populačního vývoje k vybraným problematikám teoretické demografie**. Demografie, 57(3), pp. 283-293. [článek](https://www.czso.cz/documents/10180/20555393/13005315q3.pdf/05492ae5-7188-4275-8372-c83b23f9821f?version=1.1)
+* Kociánová, G., Moszová, V., Papřoková, P., Slabá, J., Tvrz, M. and B. Burcin. 2015. **Internet Resources for Population Studies**. Available at official website of department of Demography and Geodemography [online](https://www.natur.cuni.cz/geography/department-of-demography-and-geodemography/internet-resources-for-population-studies)
+
+
+# Projekty
+
+* Hlavní řešitel projektu GAUK č. 378219, **Nezaměstnanost jako příčina odkladu plodnosti**
+
+# Prezentace a postery
+
+* **The relationship of fertility decline and individualization**, konference Young Demographers, Praha, únor 2020, [poster](postersandpresentations/2020_02_YD.pdf)
+* **Neobyčejná demografie obyčejného života**, propagační přednáška v rámci Dne otevřených dvěří, Praha, leden 2020, [prezentace](postersandpresentations/2020_01_DOD.pdf)
+* **Czech fertility postponement at the turn of the millennium**, LabTalk MPIDR, Rostock, listopad 2019, [prezentace](postersandpresentations/2019_11_MPIDR.pdf)
+* **The Effect of Unemployment Experience to First Birth Fertility**, konference ESA, Manchester, srpen 2019, [prezentace](postersandpresentations/2019_08_ESA.pdf)
+* **Odklad plodnosti v Česku na přelomu tisíciletí**, obhajoba minima disertační práce v rámci státní závěrečné zkoušky, Praha, červen 2019, [prezentace](postersandpresentations/2019_06_ObhajobaMinimum.pdf)
+* **The effect of unemployment experience on fertility timing**, konference PopFest, Londýn, květen 2019, [prezentace](postersandpresentations/2019_05_PF.pdf)
+* **The Effect of Unemployment Experience to the First Birth Fertility, Czechia in the 21st Century**, konference Young Demographers, Praha, únor 2019, [prezentace](postersandpresentations/2019_02_YD.pdf)
+* **Opinions, Plans and the Timing of Fertility, Differences among Czech Women Generations 1966–1990**, konference RELIK, Praha, listopad 2018, [prezentace](postersandpresentations/2018_11_RELIK.pdf)
+* **Unplanned Postponement of First and Second Births in the Czech Republic**, konference EPC, Brusel, červen 2018, [poster](postersandpresentations/2018_06_EPC.pdf)
+* **Neplánovaný odklad reprodukčních plánů prvního a druhého pořadí v České republice**, konference ČDS, Brno, květen 2018, [poster](postersandpresentations/2018_05_CDS.pdf)
+* **Causes of Fertility Postponement in the Czech Republic for Birth Cohorts from 1966 to 1990**, konference Young Demographers, Praha, únor 2017, [poster](postersandpresentations/2017_02_YD.pdf)
+* **Využití času v závislosti na přítomnosti dítěte v domácnosti v generacích 40. až 70. let 20. století ve Spojených státech amerických**, prezentace tématu diplomové práce v rámci semináře pro magisterské stuednty, Praha, říjen 2016, [poster](postersandpresentations/2016_10_SEMINAR.pdf)
+
+# Členství
+* **Mladí demografové / Young Demographers** - albertovský spolek každoročně organizující mezinárodní konferenci pro mladé vědce na poli demografie a souvisejících oborů
+* **European Association for Population Studies**
+* **Česká demografická společnost**
+* **Česká geografická společnost**
+* **European Sociological Association** - RN13 - Sociology of FAmilies and Intimate Lives
+

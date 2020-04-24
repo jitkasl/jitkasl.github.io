@@ -1,0 +1,24 @@
+---
+title: <center>Co čtu, co si prohlížím, co se mi líbí...</center>
+subtitle: <center>...a co by se třeba mohlo líbit i vám</center>
+---
+
+
+## Nejoblíbenější webové stránky
+
+* [Our World in Data](https://ourworldindata.org/) - snadno dostupné a přehledně zpracované více než základní informace k mnoha tématům
+* [Gapminder](https://www.gapminder.org/) - úžasně zpracovaná data, velmi pěkná videa k mnohým dnešním mýtům. Dopuručuji pohrát si i s **Gapminder Tools**. Stejně tak doporučuji jakékoliv jiné video Hanse Roslinga v rámci TED Talks  
+  
+
+## Oblíbené knihy o vizualizaci dat
+
+* za základní dílo, volně dostupné, je považována kniha Kiearana Healyho [Data Visualisation. A practical introduction](https://socviz.co/) - pokud checete začít vizualizovat v eRku, pak je toto kniha, kterou hledáte.
+* já osobně mám pak ještě ráda knihu Andyho Kirka [Data Visualisation](https://www.visualisingdata.com/book/). Ta už ale volně dostupná není.
+* loni vyšla pěkná kiha od Alberto Caira [How Charts Lie](http://albertocairo.com/) - dle všeho má Alberto na svědomí vícero pěkných knih, ty se mi ale ještě nedostaly do rukou
+
+
+## Oblíbené knihy o statistice, matematice a jiných podivnostech
+* Vrátíme se opět k Hansi Roslingovi. [Factfulness](https://www.gapminder.org/factfulness-book/) doporučuji skutečně každému. A vyšla i včeštině...
+* Jakožto milovník zeměplochy jsem velkým fanouškem knih [Věda na zeměploše](https://www.databazeknih.cz/serie/veda-na-zemeplose-39), kde vedle Terryho Pratchetta přispěli k dílu i Jack Cohen a Ian Stewart.
+* Ian Stewart je obecně mým velkým oblíbencem. Pomineme-li všechny jeho knihy matematických hříček (které už mi zpestřily mnoho hodin mého života), pak úplně úchvatnou knihou je jeho [Matematika života](https://www.databazeknih.cz/knihy/matematika-zivota-odkryvani-tajemstvi-byti-203158).
+* Poslední kniha která mne nyní napadá je o statistice. A doporučuji ji ji vřele všem, kdo mají po nějakém úvodním kurzu statistika pocit, že je to děsná nuda a ještě k ničemu. Kniha [The Art of Statistics](https://www.bookdepository.com/Art-Statistics-David-Spiegelhalter/9780241258767) od Davida Spiegelhalter prochází základními principy statistiky ruku v ruce se skutečnými příběhy o jejich aplikaci. 
