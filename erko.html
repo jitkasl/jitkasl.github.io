@@ -314,9 +314,9 @@ eRko
 
 
 <p>Jak již bylo zmíněno v úvodu, eRko je moje aktuální velká vášeň. Začala jsem psát učební text na téma úvod do R pro demografy (v češtině). Uvidíme jak to dopadne, první kapitola je aktuálně v recenzi u Aničky Altové. Zároveň by tato záložka měla být vhodným odpadkovým košem pro veškerou moji R-prokrastinaci.</p>
-<div id="vzajemný-věk-svobodných-snoubenců-česko-2018" class="section level2">
-<h2>Vzajemný věk svobodných snoubenců, Česko 2018</h2>
-<p>Na základě dat z Demografické ročenky pro rok 2018 zde vizualizuji vzájemný věk svobodných snoubenců při sňatku. Lze pozorovat, že novomanželé byly nejčastěji stejného nebo alespoň podobného věku. Zohlednímeli věk něvesty, pak podíl starších partnerů s rostoucím věkem nevěsty klesá. Oproti tomu starší svobodní muži si berou častěji mladší parnerky než jejich mladší kolegové. Nic nového pod sluncem. V případě, že chcete tento graf samostatně vytvořit, pak si stačí stáhnout příslušnou tabulku ze stránek ČSÚ a použít kód níže.</p>
+<div id="vzajemný-věk-snoubenců-při-sňatku-česko-2018" class="section level2">
+<h2>Vzajemný věk snoubenců při sňatku, Česko 2018</h2>
+<p>Na základě dat z Demografické ročenky pro rok 2018 zde vizualizuji vzájemný věk snoubenců při sňatku. Lze pozorovat, že novomanželé byly nejčastěji stejného nebo alespoň podobného věku. Zohlednímeli věk něvesty, pak podíl starších partnerů s rostoucím věkem nevěsty klesá. Oproti tomu starší svobodní muži si berou častěji mladší parnerky než jejich mladší kolegové. Nic nového pod sluncem. V případě, že chcete tento graf samostatně vytvořit, pak si stačí stáhnout příslušnou tabulku ze stránek ČSÚ a použít kód níže.</p>
 <pre class="r"><code>library(readxl)
 library(tidyverse)
 df2018all &lt;- read_excel(&quot;erko/R1/13006719rb03.xlsx&quot;, sheet = &quot;A&quot;, skip = 3) %&gt;% 
@@ -326,15 +326,9 @@ df2018all &lt;- read_excel(&quot;erko/R1/13006719rb03.xlsx&quot;, sheet = &quot;
   select(GroomAge,BrideAge,Marriages)
 
 
-df2018single &lt;- read_excel(&quot;erko/R1/13006719rb04.xlsx&quot;, sheet = &quot;A&quot;, skip = 3) %&gt;% 
-  select(-...2) %&gt;% filter(...1 &lt; 45 &amp; ...1 &gt; 15 | ...1 == &quot;45+&quot;) %&gt;% 
-  slice(1:50) %&gt;% 
-  pivot_longer(cols = `16`:`45+`, names_to = &quot;BrideAge&quot;, values_to = &quot;SinglesMarriages&quot; ) %&gt;% mutate(GroomAge = ...1) %&gt;%
-  select(GroomAge,BrideAge,SinglesMarriages)
 
-df2018 &lt;- full_join(df2018all, df2018single, by = c(&quot;GroomAge&quot;,&quot;BrideAge&quot;)) %&gt;%  
-  mutate(Marriages = ifelse(Marriages == &#39;-&#39;,0,Marriages),
-         SinglesMarriages = ifelse(SinglesMarriages == &#39;-&#39;,0,SinglesMarriages))
+df2018 &lt;- df2018all %&gt;%  
+  mutate(Marriages = ifelse(Marriages == &#39;-&#39;,0,Marriages))
 df2018[is.na(df2018)] = 0
 
 
@@ -359,8 +353,7 @@ df2018 &lt;- df2018 %&gt;% mutate(BrideWiderInterval = ifelse(BrideAge == &quot;
 
 df2018 &lt;- df2018 %&gt;% mutate(GroomAge = as.numeric(GroomAge), 
                             BrideAge = as.numeric(BrideAge),
-                            Marriages = as.numeric(Marriages),
-                            SinglesMarriages = as.numeric(SinglesMarriages))
+                            Marriages = as.numeric(Marriages))
 
 df2018 &lt;- df2018 %&gt;% 
   mutate(DiffAgeMarriages =  GroomAge - BrideAge,
@@ -393,7 +386,7 @@ g1 &lt;- ggplot(df2018, aes(x = DiffAgeMarriages, y = Marriages, fill = Legend))
   ggtitle(&quot;Marriages by the age difference of newlyweds, Czechia 2018&quot;, subtitle = &quot;All marital status&quot;) +
   xlab(&quot;Age difference between groom and bride&quot;) + 
   ylab(&quot;Number of marriages&quot;) +
-  theme(legend.position = &quot;bottom&quot;, plot.caption = element_text(colour = &quot;gray&quot;)) 
+  theme(legend.position = &quot;bottom&quot;, plot.caption = element_text(colour = &quot;gray&quot;), plot.title.position = &quot;plot&quot;) 
 
 
 df2018 &lt;- df2018 %&gt;% mutate(GroomAgeCat = cut(GroomAge, breaks=c(0, 30, 35, 40, 70), right = FALSE, 
@@ -422,7 +415,7 @@ g3 &lt;- ggplot(df2018, aes(x = DiffAgeMarriages, y = Marriages, fill = Legend))
   ylab(&quot;Number of marriages&quot;) +
   facet_wrap(~BrideAgeCat) +
   theme(legend.position = &quot;none&quot;, plot.caption = element_text(colour = &quot;gray&quot;)) +
-  labs(fill=&quot;&quot;, caption = &quot;DATA: Czech Statistical Office, Demographic Yearbook 2018, Tab. B.03 and B.04; AUTHOR: @sljitka&quot;)
+  labs(fill=&quot;&quot;, caption = &quot;DATA: Czech Statistical Office, Demographic Yearbook 2018, Tab. B.03; AUTHOR: @sljitka&quot;)
 
 library(patchwork)
 
