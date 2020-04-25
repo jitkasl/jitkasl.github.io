@@ -1,2 +1,2 @@
-# jitkasl.github.io
-websites
+# jitkaslaba_personal
+Jitka Slabá - personal websites
