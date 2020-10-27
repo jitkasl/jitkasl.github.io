@@ -25,6 +25,15 @@
 <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
 <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
 
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+      </style>
+
 <style type="text/css">code{white-space: pre;}</style>
 <style type="text/css">
   pre:not([class]) {
@@ -316,110 +325,7 @@ eRko
 <p>Jak již bylo zmíněno v úvodu, eRko je moje aktuální velká vášeň. Začala jsem psát učební text na téma úvod do R pro demografy (v češtině). Uvidíme jak to dopadne, první kapitola je aktuálně v recenzi u Aničky Altové. Zároveň by tato záložka měla být vhodným odpadkovým košem pro veškerou moji R-prokrastinaci.</p>
 <div id="vzajemný-věk-snoubenců-při-sňatku-česko-2018" class="section level2">
 <h2>Vzajemný věk snoubenců při sňatku, Česko 2018</h2>
-<p>Na základě dat z Demografické ročenky pro rok 2018 zde vizualizuji vzájemný věk snoubenců při sňatku. Lze pozorovat, že novomanželé byly nejčastěji stejného nebo alespoň podobného věku. Zohlednímeli věk něvesty, pak podíl starších partnerů s rostoucím věkem nevěsty klesá. Oproti tomu starší svobodní muži si berou častěji mladší parnerky než jejich mladší kolegové. Nic nového pod sluncem. V případě, že chcete tento graf samostatně vytvořit, pak si stačí stáhnout příslušnou tabulku ze stránek ČSÚ a použít kód níže.</p>
-<pre class="r"><code>library(readxl)
-library(tidyverse)
-df2018all &lt;- read_excel(&quot;erko/R1/13006719rb03.xlsx&quot;, sheet = &quot;A&quot;, skip = 3) %&gt;% 
-  select(-...2) %&gt;% filter(...1 &lt; 65 &amp; ...1 &gt; 15 | ...1 == &quot;65+&quot;) %&gt;% 
-  slice(1:50) %&gt;% 
-  pivot_longer(cols = `16`:`65+`, names_to = &quot;BrideAge&quot;, values_to = &quot;Marriages&quot; ) %&gt;% mutate(GroomAge = ...1) %&gt;%
-  select(GroomAge,BrideAge,Marriages)
-
-
-
-df2018 &lt;- df2018all %&gt;%  
-  mutate(Marriages = ifelse(Marriages == &#39;-&#39;,0,Marriages))
-df2018[is.na(df2018)] = 0
-
-
-df2018 &lt;- df2018 %&gt;% mutate(BrideWiderInterval = ifelse(BrideAge == &quot;65+&quot;,1 , 
-                                                        ifelse(BrideAge == &quot;45+&quot;,1,
-                                                               ifelse(BrideAge == &#39;60-64&#39;,1,
-                                                                       ifelse(BrideAge == &#39;55-59&#39;,1,
-                                                                              ifelse(BrideAge == &#39;50-54&#39;,1,
-                                                                                     ifelse(BrideAge == &#39;45-49&#39;,1,
-                                                                                            ifelse(BrideAge == &#39;40-44&#39;,1,0))))))),
-                            GroomWiderInterval = ifelse(GroomAge == &quot;65+&quot;,1 , 
-                                                        ifelse(GroomAge == &quot;45+&quot;,1,0))) %&gt;% 
-  mutate(BrideAge = ifelse(BrideAge == &quot;65+&quot;,65 , 
-                                                        ifelse(BrideAge == &quot;45+&quot;,45,
-                                                               ifelse(BrideAge == &#39;60-64&#39;,60,
-                                                                       ifelse(BrideAge == &#39;55-59&#39;,55,
-                                                                              ifelse(BrideAge == &#39;50-54&#39;,50,
-                                                                                     ifelse(BrideAge == &#39;45-49&#39;,45,
-                                                                                            ifelse(BrideAge == &#39;40-44&#39;,40,BrideAge))))))),
-                            GroomAge = ifelse(GroomAge == &quot;65+&quot;,65 , 
-                                                        ifelse(GroomAge == &quot;45+&quot;,45,GroomAge)))
-
-df2018 &lt;- df2018 %&gt;% mutate(GroomAge = as.numeric(GroomAge), 
-                            BrideAge = as.numeric(BrideAge),
-                            Marriages = as.numeric(Marriages))
-
-df2018 &lt;- df2018 %&gt;% 
-  mutate(DiffAgeMarriages =  GroomAge - BrideAge,
-         WideIntervals = ifelse(GroomWiderInterval == &#39;0&#39;,
-                                   ifelse(BrideWiderInterval == &#39;0&#39;, &#39;OneYearInterval&#39; , &#39;WiderInterval&#39;),
-                                   &#39;WiderInterval&#39;))
-
-
-library(ggplot2)
-
-df2018 &lt;- df2018 %&gt;% mutate(Legend = ifelse(DiffAgeMarriages &gt; 0 &amp; WideIntervals == &#39;OneYearInterval&#39;, &quot;Groom is older&quot;,
-                                     ifelse(DiffAgeMarriages == 0 &amp; WideIntervals == &#39;OneYearInterval&#39;, &quot;Newlyweds are equally old&quot;,
-                                     ifelse(DiffAgeMarriages &lt; 0 &amp; WideIntervals == &#39;OneYearInterval&#39;, &quot;Bride is older&quot;,
-                                     ifelse(DiffAgeMarriages &gt; 0 &amp; WideIntervals == &#39;WiderInterval&#39;, &quot;Groom is older at least by X years&quot;,
-                                     ifelse(DiffAgeMarriages == 0 &amp; WideIntervals == &#39;WiderInterval&#39;, &quot;Newlyweds are potentially same age&quot;,
-                                     ifelse(DiffAgeMarriages &lt; 0 &amp; WideIntervals == &#39;WiderInterval&#39;, &quot;Bride is older at least by X years&quot;, &quot;-&quot;)))))))
-
-cols &lt;- c(&quot;Groom is older&quot; = &quot;#AED6F1&quot;, 
-          &quot;Newlyweds are equally old&quot; = &quot;#D7BDE2&quot;, 
-          &quot;Bride is older&quot; = &quot;#F5B7B1&quot;, 
-          &quot;Groom is older at least by X years&quot; = &quot;#3498DB&quot;,
-          &quot;Newlyweds are potentially same age&quot; = &quot;#9B59B6&quot;,
-          &quot;Bride is older at least by X years&quot; = &quot;#E74C3C&quot;)
-
-g1 &lt;- ggplot(df2018, aes(x = DiffAgeMarriages, y = Marriages, fill = Legend)) +
-  geom_col(position = position_stack(reverse = TRUE)) +
-  scale_fill_manual(values = cols) +
-  scale_x_continuous(limits = (c(-25,35)), breaks = seq(-25,35,5), labels = abs(seq(-25,35,5))) +
-  theme_classic() +
-  ggtitle(&quot;Marriages by the age difference of newlyweds, Czechia 2018&quot;, subtitle = &quot;All marital status&quot;) +
-  xlab(&quot;Age difference between groom and bride&quot;) + 
-  ylab(&quot;Number of marriages&quot;) +
-  theme(legend.position = &quot;bottom&quot;, plot.caption = element_text(colour = &quot;gray&quot;), plot.title.position = &quot;plot&quot;) 
-
-
-df2018 &lt;- df2018 %&gt;% mutate(GroomAgeCat = cut(GroomAge, breaks=c(0, 30, 35, 40, 70), right = FALSE, 
-                                              labels = c(&quot;less than 29&quot;,&quot;30-34 yrs&quot;, &quot;35-39 yrs&quot;, &quot;40 and more&quot;))) %&gt;% 
-   mutate(BrideAgeCat = cut(BrideAge, breaks=c(0, 25, 30, 35, 70), right = FALSE, 
-                                              labels = c(&quot;less than 25&quot;, &quot;25-29 yrs&quot;,&quot;30-34 yrs&quot;, &quot;35 and more&quot;)))
-
-g2 &lt;- ggplot(df2018, aes(x = DiffAgeMarriages, y = Marriages, fill = Legend)) +
-  geom_col(position = position_stack(reverse = TRUE)) +
-  scale_fill_manual(values = cols) +
-  scale_x_continuous(limits = (c(-25,35)), breaks = seq(-25,35,5), labels = abs(seq(-25,35,5))) +
-  theme_classic() +
-  ggtitle(&quot;&quot;, subtitle = &quot;By the groom&#39;s age groups&quot;) +
-  xlab(&quot;Age difference between groom and bride&quot;) + 
-  ylab(&quot;Number of marriages&quot;) +
-  facet_wrap(~GroomAgeCat)  +
-  theme(legend.position = &quot;none&quot;, plot.caption = element_text(colour = &quot;gray&quot;)) 
-
-g3 &lt;- ggplot(df2018, aes(x = DiffAgeMarriages, y = Marriages, fill = Legend)) +
-  geom_col(position = position_stack(reverse = TRUE)) +
-  scale_fill_manual(values = cols) +
-  scale_x_continuous(limits = (c(-25,35)), breaks = seq(-25,35,5), labels = abs(seq(-25,35,5))) +
-  theme_classic() +
-  ggtitle(&quot;&quot;,subtitle = &quot;By the bride&#39;s age groups&quot;) +
-  xlab(&quot;Age difference between groom and bride&quot;) + 
-  ylab(&quot;Number of marriages&quot;) +
-  facet_wrap(~BrideAgeCat) +
-  theme(legend.position = &quot;none&quot;, plot.caption = element_text(colour = &quot;gray&quot;)) +
-  labs(fill=&quot;&quot;, caption = &quot;DATA: Czech Statistical Office, Demographic Yearbook 2018, Tab. B.03; AUTHOR: @sljitka&quot;)
-
-library(patchwork)
-
-g1/(g2 + g3) </code></pre>
+<p>Na základě dat z Demografické ročenky pro rok 2018 zde vizualizuji vzájemný věk snoubenců při sňatku. Lze pozorovat, že novomanželé byly nejčastěji stejného nebo alespoň podobného věku. Zohlednímeli věk něvesty, pak podíl starších partnerů s rostoucím věkem nevěsty klesá. Oproti tomu starší svobodní muži si berou častěji mladší parnerky než jejich mladší kolegové. Nic nového pod sluncem. V případě, že chcete tento graf samostatně vytvořit, pak si stačí stáhnout příslušnou tabulku ze stránek ČSÚ a použít kód <a href="https://jitkasl.github.io/erko_kod1.html">zde</a></p>
 <p><img src="erko_files/figure-html/R1-1.png" width="1152" /></p>
 </div>
 

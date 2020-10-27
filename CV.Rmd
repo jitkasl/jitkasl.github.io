@@ -51,9 +51,11 @@ title: <center>CV - Jitka Slabá</center>
   
   
 * **Absolvované kurzy v průběhu doktorského studia**
+  + English for Teaching Purposes (PřF, UK)
   + Kurz projektového řízení (PřF, UK)
   + Vysokoškolská pedagogika (PřF, UK)
   + Aplikovaná improvizace (PřF, UK)
+  + Aplikovaná improvizace pro pokročilé (PřF, UK)
   + Praktická rétorika a prezentace (PřF, UK)
   + Rétorika a prezentace pro pokročilé (PřF, UK)
   + Introduction to R (BSSD, Barcelona)
@@ -120,13 +122,13 @@ title: <center>CV - Jitka Slabá</center>
 * **Opinions, Plans and the Timing of Fertility, Differences among Czech Women Generations 1966–1990**, konference RELIK, Praha, listopad 2018, [prezentace](postersandpresentations/2018_11_RELIK.pdf)
 * **Unplanned Postponement of First and Second Births in the Czech Republic**, konference EPC, Brusel, červen 2018, [poster](postersandpresentations/2018_06_EPC.pdf)
 * **Neplánovaný odklad reprodukčních plánů prvního a druhého pořadí v České republice**, konference ČDS, Brno, květen 2018, [poster](postersandpresentations/2018_05_CDS.pdf)
-* **Causes of Fertility Postponement in the Czech Republic for Birth Cohorts from 1966 to 1990**, konference Young Demographers, Praha, únor 2017, [poster](postersandpresentations/2017_02_YD.pdf)
-* **Využití času v závislosti na přítomnosti dítěte v domácnosti v generacích 40. až 70. let 20. století ve Spojených státech amerických**, prezentace tématu diplomové práce v rámci semináře pro magisterské stuednty, Praha, říjen 2016, [poster](postersandpresentations/2016_10_SEMINAR.pdf)
+* **Causes of Fertility Postponement in the Czech Republic for Birth Cohorts from 1966 to 1990**, konference Young Demographers, Praha, únor 2017, [prezentace](postersandpresentations/2017_02_YD.pdf)
+* **Využití času v závislosti na přítomnosti dítěte v domácnosti v generacích 40. až 70. let 20. století ve Spojených státech amerických**, prezentace tématu diplomové práce v rámci semináře pro magisterské stuednty, Praha, říjen 2016, [prezentace](postersandpresentations/2016_10_SEMINAR.pdf)
 
 # Členství
 * **Mladí demografové / Young Demographers** - albertovský spolek každoročně organizující mezinárodní konferenci pro mladé vědce na poli demografie a souvisejících oborů
 * **European Association for Population Studies**
 * **Česká demografická společnost**
 * **Česká geografická společnost**
-* **European Sociological Association** - RN13 - Sociology of FAmilies and Intimate Lives
+* **European Sociological Association** - RN13 - Sociology of Families and Intimate Lives
 

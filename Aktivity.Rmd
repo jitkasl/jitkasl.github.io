@@ -2,3 +2,6 @@
 title: <center>Aktivity</center>
 ---
 Dominantní aktivitou, kvůli které tato záložka vznikla, je propagace spolku [Mladých demografů (Young Demographers)](https://demografove.estranky.cz/). Upřímně doufám, že se pochlapím/poženštím a vyrobím tomuto uskupení nové webové stránky.
+
+**Aktualizace 27. 10. 2020**
+Nakonec se poženštila Anna (s použitím stejného mustru jako já na tyto stránky). [Vizte!](https://youngdemographers.github.io/index.html)  
